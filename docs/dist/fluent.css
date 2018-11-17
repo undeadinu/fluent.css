@@ -1,6 +1,6 @@
 /*! Fluent.css v0.1.0 | MIT License | github.com/picturepan2/fluent.css */
 .reveal-focus {
-  background: #303742;
+  background: #f7f8f9;
   border: .2rem solid transparent;
   display: block;
   transition: border .15s ease-in, box-shadow .15s ease-in;
@@ -11,6 +11,10 @@
   animation: reveal-focus 750ms 1;
   border-color: #5755d9;
   box-shadow: 0 .1rem 2rem rgba(87, 85, 217, .5);
+}
+
+.reveal-focus.theme-dark {
+  background: #303742;
 }
 
 @keyframes reveal-focus {

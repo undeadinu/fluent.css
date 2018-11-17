@@ -3,8 +3,8 @@ extends _layout/_layout.pug
 block variables
   - var slug = 'index'
   - var parent = 'index'
-  - var title = 'Fluent.css CSS Framework based on Microsoft Fluent Design'
-  - var description = 'Fluent.css is a lightweight, responsive and modern CSS framework for faster and extensible development. Spectre provides basic styles for typography and elements, flexbox based responsive layout system, pure CSS components and utilities with best practice coding and consistent design language.'
+  - var title = 'Fluent.css - CSS library based on Microsoft Fluent Design'
+  - var description = 'Fluent.css is a CSS library based on Microsoft Fluent Design.'
 
 block content
   .section.section-hero.bg-gray
@@ -15,38 +15,30 @@ block content
           h2 SPECTRE
       h1 FLUENT.CSS
       h2
-        | A #[u Lightweight], #[u Responsive] and #[u Modern] CSS Framework
+        | A CSS library based on Microsoft Fluent Design
       p
         a.btn.btn-primary.btn-lg(href='https://github.com/picturepan2/fluent.css' target='_blank') GitHub
       p.text-gray
         | Latest version: 
         span.version
-      .columns
-        .column.col-4.col-xs-12
-          .card.text-center
-            .card-header
-              span.card-title Lightweight
-            .card-body
-              | Lightweight  (~10KB gzipped) starting point for your projects
-        .column.col-4.col-xs-12
-          .card.text-center
-            .card-header
-              span.card-title Responsive
-            .card-body
-              | Flexbox-based, responsive and mobile-friendly layout
-        .column.col-4.col-xs-12
-          .card.text-center
-            .card-header
-              span.card-title Modern
-            .card-body
-              | Elegantly designed and developed elements and components
   
   .section.section-ads.bg-gray
     include _layout/_ad-g.pug
 
-  .section.section-features.text-light.text-center
+  .section.section-features.bg-dark.text-light.text-center
     .container.grid-lg
-      h2 Reveal Focus
+      h2 Reveal Focus (Dark)
+      .columns
+        .column.col-12
+          .tiles.d-flex
+            .example-tile.reveal-focus.theme-dark
+            .example-tile.reveal-focus.theme-dark
+            .example-tile.reveal-focus.theme-dark
+            .example-tile.reveal-focus.theme-dark
+
+  .section.section-features.bg-light.text-center
+    .container.grid-lg
+      h2 Reveal Focus (Light)
       .columns
         .column.col-12
           .tiles.d-flex

@@ -1,6 +1,6 @@
 // Reveal Focus
 .reveal-focus {
-  background: $dark-color;
+  background: $gray-color-light;
   border: .2rem solid transparent;
   display: block;
   transition: border .15s ease-in, box-shadow .15s ease-in;
@@ -10,6 +10,10 @@
     animation: reveal-focus 750ms 1;
     border-color: $primary-color;
     box-shadow: 0 .1rem 2rem rgba($primary-color, .5);
+  }
+
+  &.theme-dark {
+    background: $dark-color;
   }
 }
 

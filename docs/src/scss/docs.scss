@@ -300,8 +300,11 @@
 }
 
 .section-features {
-  background: darken($dark-color, 10%);
   padding: 4.5rem .5rem;
+
+  &.bg-dark {
+    background: darken($dark-color, 10%) !important;
+  }
 
   .column {
     padding: $layout-spacing;
