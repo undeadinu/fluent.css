@@ -6,23 +6,6 @@
   content: "#{$version}";
 }
 
-.off-canvas {
-  .off-canvas-toggle {
-    font-size: 1rem;
-    left: 1.5rem;
-    position: fixed;
-    top: 1rem;
-  }
-
-  .off-canvas-sidebar {
-    width: 12rem;
-  }
-
-  .off-canvas-content {
-    padding: 0;
-  }
-}
-
 .docs-container {
   min-height: 100vh;
 }
@@ -162,43 +145,6 @@
   .docs-block {
     border-radius: $border-radius;
     padding: $unit-2;
-
-    &.bg-gray {
-      background: $bg-color-dark;
-    }
-  }
-
-  .docs-shape {
-    height: 4.8rem;
-    line-height: 1.2rem;
-    padding: 1.8rem 0;
-    width: 4.8rem;
-  }
-
-  .docs-dot {
-    border-radius: 50%;
-    display: inline-block;
-    height: .5rem;
-    padding: 0;
-    width: .5rem;
-  }
-
-  .docs-table {
-    th,
-    td {
-      padding: .75rem .25rem;
-    }
-  }
-
-  .docs-color {
-    border-radius: $border-radius;
-    margin: .25rem 0;
-    padding: .5rem;
-
-    .color-subtitle {
-      font-size: $font-size-sm;
-      opacity: .75;
-    }
   }
 
   .code {
@@ -232,58 +178,6 @@
 
   .c-select-all {
     user-select: all;
-  }
-
-  .panel {
-    height: 75vh;
-
-    .tile {
-      margin: .75rem 0;
-    }
-  }
-
-  .parallax {
-    margin: 2rem auto;
-  }
-
-  .form-autocomplete .menu {
-    position: static;
-  }
-
-  .example-tile-icon {
-    align-content: space-around;
-    align-items: center;
-    background: $primary-color;
-    border-radius: $border-radius;
-    color: $light-color;
-    display: flex;
-    font-size: 1.2rem;
-    height: 2rem;
-    width: 2rem;
-
-    .icon {
-      margin: auto;
-    }
-  }
-
-  .comparison-slider {
-    height: auto;
-    padding-bottom: 56.2222%;
-
-    .filter-grayscale {
-      filter: grayscale(75%);
-    }
-  }
-
-  .off-canvas {
-    position: relative;
-
-    .off-canvas-toggle {
-      left: $layout-spacing;
-      position: absolute;
-      top: $layout-spacing;
-      z-index: $zindex-0;
-    }
   }
 }
 
@@ -365,6 +259,15 @@
   }
 }
 
+.example-tile {
+  font-size: 1.2rem;
+  height: 8rem;
+  margin: .5rem;
+  padding: 1rem;
+  text-align: left;
+  width: 100%;
+}
+
 /* Spectre Homepage style */
 .section-hero {
   padding: 1rem .5rem;
@@ -397,6 +300,7 @@
 }
 
 .section-features {
+  background: darken($dark-color, 10%);
   padding: 4.5rem .5rem;
 
   .column {

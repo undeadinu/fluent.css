@@ -1,1 +1,26 @@
 /*! Fluent.css v0.1.0 | MIT License | github.com/picturepan2/fluent.css */
+.reveal-focus {
+  background: #303742;
+  border: .2rem solid transparent;
+  display: block;
+  transition: border .15s ease-in, box-shadow .15s ease-in;
+}
+
+.reveal-focus:focus,
+.reveal-focus:hover {
+  animation: reveal-focus 750ms 1;
+  border-color: #5755d9;
+  box-shadow: 0 .1rem 2rem rgba(87, 85, 217, .5);
+}
+
+@keyframes reveal-focus {
+  0% {
+    box-shadow: 0 0 0 rgba(87, 85, 217, .25);
+  }
+  25% {
+    box-shadow: 0 .1rem 3rem rgba(87, 85, 217, .75);
+  }
+  100% {
+    box-shadow: 0 .1rem 2rem rgba(87, 85, 217, .5);
+  }
+}
