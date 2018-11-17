@@ -306,6 +306,10 @@
     background: darken($dark-color, 10%) !important;
   }
 
+  &.bg-wallpaper {
+    background: url("../img/macos-sierra-2.jpg") no-repeat center / cover;
+  }
+
   .column {
     padding: $layout-spacing;
   }

@@ -1,4 +1,9 @@
-// Reveal Focus
-.reveal-focus {
-  
+// Arcylic
+.acrylic {
+  backdrop-filter: blur(1.1rem) saturate(125%);
+  background: rgba($light-color, .6);
+
+  &.theme-dark {
+    background: rgba($dark-color, .6);
+  }
 }

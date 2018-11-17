@@ -303,6 +303,10 @@
   background: #1b1e24 !important;
 }
 
+.section-features.bg-wallpaper {
+  background: url("../img/macos-sierra-2.jpg") no-repeat center/cover;
+}
+
 .section-features .column {
   padding: .4rem;
 }
